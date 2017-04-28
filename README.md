@@ -1,53 +1,80 @@
-# Message-board
+# Message Board
+### Message Board, Current Version: 04/28/2017
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### Description
 
-## Prerequisites
+Web based message board using Ember.js framework. Users can ask and answer questions.
 
-You will need the following things properly installed on your computer.
+### By Gloria Friesen
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## Installation/Setup
 
-## Installation
+* In the terminal, run:
+  * `git clone <https://github.com/GloriaFriesen/message-board>`
+  * `$ cd message-board`
+  * `$ npm install`
+  * `$ bower install`
+  * `$ ember s`
+* In your browser, go to [http://localhost:4200](http://localhost:4200)
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+## Preparations
+#### Stuff it needs
+  * Questions
+    * query
+    * author
+    * notes
+  * Answers
+    * content
+    * author
+  * Navbar
+    * application name
+    * link to homepage
+  * Homepage
+    * list all questions
+      * display query and author
+      * link each question to a detail page
+    * add question
+  * Question detail page
+    * display query, author, and notes of the individual question
+    * update question
+    * add answer
+    * update answer
 
-## Running / Development
+#### Stuff it wants
+  * Footer
+    * links to github, linkedin
+    * author
+  * Modals
+    * All forms will be displayed as modals
+    * will need jquery add on
+  * Delete question
+  * Delete answer
+  * Styling
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+#### Stuff it would love
+  * User model
+    * Would be a one-to-many relationship to questions and answers
+  * Tags
+  * Awesome design
+  * Great theme
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Known Bugs
+We'll see.
 
-### Running Tests
+## Support and contact details
+Questions? Concerns? Suggestions? Reach out to me via github: <https://github.com/GloriaFriesen>.
 
-* `ember test`
-* `ember test --server`
+## Technologies Used
+* _Ember.js_
+* _JavaScript_
+* _HTML_
+* _CSS_
+* _Node.js_
+* _npm_
+* _Bower_
+* _Bootstrap_
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+## License
+This software is licensed under the MIT license.
+Copyright (c) 2017 Gloria Friesen.
