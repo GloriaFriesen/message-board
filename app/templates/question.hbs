@@ -9,4 +9,16 @@
 </div>
 {{update-question question=model update="update" destroyQuestion="destroyQuestion"}}
 
+<h2>Answers</h2>
+{{#each model.answers as |answer|}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>{{answer.author}}'s thoughts:</h4>
+  </div>
+  <div class="panel-body">
+    <p>{{answer.content}}</p>
+  </div>
+</div>
+{{/each}}
+
 {{new-answer saveAnswer="saveAnswer" question=model}}
