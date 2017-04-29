@@ -1,3 +1,17 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
 {{outlet}}
+</div>
+<footer>
+  <p>Made by Gloria. 2017.</p>
+</footer>
