@@ -1,0 +1,14 @@
+{ "questions": [{
+    "query": "How does JS front-end framework (ember, Angular etc.) work with back-end frameworks(such as Django , Rails etc.)?",
+    "author": "Abby",
+    "note": "I have used django for few projects and used heroku to deploy. I have been looking into front-end frameworks such as Ember, Angular and was confused as to how it will integrate with a django project. Reading some Docs, it appears i need to have developed a REST api for my app using the backend framework in order for Javascript framework to communicate with the database. In this case the backend mostly works as a thin layer that provides access to the database. But what if I use something like parse and their Javascript API, would I even need a Backend Framework like Django?"
+  }, {
+    "query": "What is the purpose of various JS files inside Ember Package?",
+    "author": "Jack",
+    "note": " have pulled ember with bower and I see various files. I do understand that I will have to add ember.min.js and ember-template-compiler.js to start working with ember. But I see other files that I am curious of: ember.debug.js, ember.prod.js, ember.testing.js. Can anyone describe purpose of these files?"
+  }],
+  "answers": [{
+    "content": "I don't know",
+    "author": "Me"
+  }]
+}
