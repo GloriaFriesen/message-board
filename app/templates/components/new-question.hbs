@@ -1,0 +1,21 @@
+{{#if addQuestion}}
+  <form>
+    <div class="form-group">
+      <label for="author">Name</label>
+      {{input value=author id="author"}}
+    </div>
+    <div class="form-group">
+      <label for="query">Question</label>
+      {{input value=query id="query"}}
+    </div>
+    <div class="form-group">
+      <label for="note">Notes and Ellaborations</label>
+      <br>
+      {{textarea value=note class="note"}}
+    </div>
+    <button {{action 'saveQuestion'}} class="btn">Ask</button>
+    <button {{action 'cancel'}} class="btn">Cancel</button>
+  </form>
+{{else}}
+  <button {{action 'showQuestionForm'}} class="btn">Ask a question</button>
+{{/if}}

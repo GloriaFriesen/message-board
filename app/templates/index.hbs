@@ -1,8 +1,17 @@
 <h2>Questions</h2>
 
 {{#each model.questions as |question|}}
-  {{#link-to 'question' question.id}}
-    {{question.query}}
-  {{/link-to}}
-  <p>by {{question.author}}</p>
+  <div class="row">
+    <div class="col-md-9">
+      {{#link-to 'question' question.id}}
+        {{question.query}}
+      {{/link-to}}
+    </div>
+    <div class="col-md-3">
+      <p>knowledge seeker: {{question.author}}</p>
+    </div>
+  </div>
+  <hr>
 {{/each}}
+
+{{new-question saveQuestion="saveQuestion"}}
