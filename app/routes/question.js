@@ -7,7 +7,12 @@ export default Ember.Route.extend({
 
   actions: {
     destroyQuestion(question) {
-      question.destroyRecord();
+      var answer_deletions = question.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answer_deletions).then(function() {
+        return question.destroyRecord();
+      });
       this.transitionTo('index');
     },
     update(question, params) {
@@ -27,6 +32,19 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question', question);
+    },
+    updateAnswer(answer, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined && params[key]!=='') {
+          answer.set(key, params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('question');
+    },
+    deleteAnswer(answer) {
+      answer.destroyRecord();
+      this.transitionTo('question');
     }
   }
 });

@@ -1,0 +1,17 @@
+{{#if updateAnswerForm}}
+<form>
+  <div class="form-group">
+    <label for="author">Name</label>
+    {{input value=answer.author}}
+  </div>
+  <div class="form-group">
+    <label for="content">Answer</label>
+    {{input value=answer.content}}
+  </div>
+  <button {{action 'updateAnswer' answer}} class="btn">Save</button>
+  <button {{action 'cancel'}} class="btn">Cancel</button>
+</form>
+{{else}}
+ <button {{action 'showUpdateForm'}} class="btn">Update Answer</button>
+{{/if}}
+<button {{action 'deleteAnswer' answer}} class="btn">Delete Answer</button>

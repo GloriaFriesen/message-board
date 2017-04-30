@@ -5,3 +5,8 @@ footer {
   background-color: lightgray;
   padding: 4px;
 }
+
+#answers {
+  width: 80%;
+  margin: 0 auto;
+}
