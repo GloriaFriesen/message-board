@@ -1,19 +1,19 @@
-<button {{action 'delete' question}} class="btn">Delete</button>
+<button {{action 'delete' question}} class="btn">Delete Question</button>
 
 {{#if updateQuestion}}
   <form>
     <div class="form-group">
       <label for="author">Name</label>
-      {{input value=question.author id="author"}}
+      {{input value=question.author id="author" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="query">Question</label>
-      {{input value=question.query id="query"}}
+      {{input value=question.query id="query" class="form-control"}}
     </div>
     <div class="form-group">
       <label for="note">Notes and Ellaborations</label>
       <br>
-      {{textarea value=question.note class="note"}}
+      {{textarea value=question.note cols="95" rows="8"}}
     </div>
     <button {{action 'update' question}} class="btn">Update</button>
     <button {{action 'cancel'}} class="btn">Cancel</button>

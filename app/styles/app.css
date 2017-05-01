@@ -4,16 +4,3 @@ footer {
   opacity: .3;
   background-color: lightgray;
   padding: 4px;
-
-h1 {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
-  font-size: 50px;
-}
-
-.container {
-  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
-}
-
-/*.title {
-  float: left;
-}*/

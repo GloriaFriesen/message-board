@@ -2,11 +2,11 @@
 <form>
   <div class="form-group">
     <label for="author">Name</label>
-    {{input value=answer.author}}
+    {{input value=answer.author class="form-control"}}
   </div>
   <div class="form-group">
     <label for="content">Answer</label>
-    {{textarea value=answer.content}}
+    {{textarea value=answer.content cols="95" rows="8"}}
   </div>
   <button {{action 'updateAnswer' answer}} class="btn">Save</button>
   <button {{action 'cancel'}} class="btn">Cancel</button>

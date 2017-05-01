@@ -6,21 +6,22 @@
   <div class="panel-body">
     <p>{{model.note}}</p>
   </div>
+  {{update-question question=model update="update" destroyQuestion="destroyQuestion"}}
 </div>
-{{update-question question=model update="update" destroyQuestion="destroyQuestion"}}
-<div id="answers">
-
+<hr>
+<hr>
 <h2>Answers</h2>
-  {{#each model.answers as |answer|}}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4>{{answer.author}}'s thoughts:</h4>
-    </div>
-    <div class="panel-body">
-      <p>{{answer.content}}</p>
-    </div>
+{{#each model.answers as |answer|}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>{{answer.author}}'s thoughts:</h4>
+  </div>
+  <div class="panel-body">
+    <p>{{answer.content}}</p>
   </div>
   {{update-answer updateAnswer="updateAnswer" deleteAnswer="deleteAnswer" answer=answer}}
-  {{/each}}
-  {{new-answer saveAnswer="saveAnswer" question=model}}
 </div>
+{{/each}}
+<hr>
+<hr>
+{{new-answer saveAnswer="saveAnswer" question=model}}
