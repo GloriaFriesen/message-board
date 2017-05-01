@@ -31,7 +31,7 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
-      this.transitionTo('question', question);
+      this.transitionTo('question');
     },
     updateAnswer(answer, params) {
       Object.keys(params).forEach(function(key) {

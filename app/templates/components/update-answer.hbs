@@ -6,7 +6,7 @@
   </div>
   <div class="form-group">
     <label for="content">Answer</label>
-    {{input value=answer.content}}
+    {{textarea value=answer.content}}
   </div>
   <button {{action 'updateAnswer' answer}} class="btn">Save</button>
   <button {{action 'cancel'}} class="btn">Cancel</button>

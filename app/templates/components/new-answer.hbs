@@ -1,16 +1,22 @@
-{{#if addAnswer}}
-<form>
+{{#bs-modal submitTitle="Submit" open=modal3 onSubmit=(action "saveAnswer") onHidden=(action (mut modal3) false) as |modal|}}
+  {{#modal.header}}
+    <h4 class="modal-title">
+      New Answer
+    </h4>
+  {{/modal.header}}
+  {{#modal.body}}
   <div class="form-group">
     <label for="author">Name</label>
     {{input value=author}}
   </div>
   <div class="form-group">
     <label for="content">Answer</label>
-    {{input value=content}}
+    {{textarea value=content}}
   </div>
-  <button {{action 'saveAnswer'}} class="btn">Save</button>
-  <button {{action 'cancel'}} class="btn">Cancel</button>
-</form>
-{{else}}
-  <button {{action 'answerForm'}} class="btn">Add answer</button>
-{{/if}}
+  {{/modal.body}}
+{{#modal.footer}}
+  {{#bs-button onClick=(action modal.close)}}Cancel{{/bs-button}}
+  {{#bs-button type="success" onClick=(action modal.submit)}}Save{{/bs-button}}
+{{/modal.footer}}
+{{/bs-modal}}
+{{#bs-button onClick=(action (mut modal3) true)}}Submit Answer{{/bs-button}}

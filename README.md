@@ -1,9 +1,10 @@
-# Message Board
-### Message Board, Current Version: 04/28/2017
+# Ctrl.Alt.Del
+### Technology Message Board
+Current Version: 1.0 - 04.28.2017
 
 ### Description
 
-Web based message board using Ember.js framework. Users can ask and answer questions.
+Web based message board using Ember.js framework. Users can ask and answer computer and technology related questions.
 
 ### By Gloria Friesen
 
@@ -18,46 +19,16 @@ Web based message board using Ember.js framework. Users can ask and answer quest
 * In your browser, go to [http://localhost:4200](http://localhost:4200)
 
 ## Preparations
-#### Stuff it needs
-  * Questions
-    * query
-    * author
-    * notes
-  * Answers
-    * content
-    * author
-  * Navbar
-    * application name
-    * link to homepage
-  * Homepage
-    * list all questions
-      * display query and author
-      * link each question to a detail page
-    * add question
-  * Question detail page
-    * display query, author, and notes of the individual question
-    * update question
-    * add answer
-    * update answer
+|Stuff it needs|Stuff it wants|Stuff it would love to have|
+|--------------|--------------|---------------------------|
+|Questions: query, author, notes|Footer: links to github/linkedin, author|User model|
+|Answers: content, author|Modals: forms, may need jquery|Tags|
+|Navbar: application name, link to homepage|Delete question|Awesome design|
+|Homepage: list all questions, link to question detail page, add question|Delete answer|Great theme|
+|Question page: display all question info, update question, add answer|Styling||
 
-#### Stuff it wants
-  * Footer
-    * links to github, linkedin
-    * author
-  * Modals
-    * All forms will be displayed as modals
-    * will need jquery add on
-  * Delete question
-  * Delete answer
-  * Styling
-
-#### Stuff it would love
-  * User model
-    * Would be a one-to-many relationship to questions and answers
-  * Tags
-  * Awesome design
-  * Great theme
-
+## Application Map
+![Ember Routing Map](public/assets/images/map.jpg)
 
 ## Known Bugs
 We'll see.
@@ -70,7 +41,6 @@ Questions? Concerns? Suggestions? Reach out to me via github: <https://github.co
 * _JavaScript_
 * _HTML_
 * _CSS_
-* _Node.js_
 * _npm_
 * _Bower_
 * _Bootstrap_
