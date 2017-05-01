@@ -1,18 +1,76 @@
 footer {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 0;
   opacity: .3;
   background-color: lightgray;
   padding: 4px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 h1 {
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
-  font-size: 50px;
+  font-size: 100px;
   text-shadow: 2px 2px grey;
 }
 
 .container {
-  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+#about {
+  width: 60%;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.jumbotron {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  background-color: #4A4A4A;
+  padding-left: 40px;
+  text-align: center;
+  height: 350px;
+}
+
+
+/*navbar styling*/
+* {
+  margin: auto;
+}
+
+#navbar ul {
+  background-color: #4A4A4A;
+  border-bottom: solid #875555;
+  border-width: 10px;
+  height: 100px;
+  word-spacing: 70px;
+  text-align: center;
+}
+
+#navbar a {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #875555;
+  transition: ease-out 0.2s;
+}
+
+
+#navbar li {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: ease-out 0.5s;
+}
+
+#navbar a:hover {
+  background-color: #875555;
+  color: #4A4A4A;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  transition: ease-out 0.5s;
+  text-decoration: none;
 }
